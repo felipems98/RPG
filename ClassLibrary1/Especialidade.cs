@@ -5,7 +5,7 @@
         public int idEsp { get; set; }
         public string nome { get; set; }
 
-        public string setEspecialidade( int id )
+        public string selecionarEspecialidade( int id )
         {
             Especialidade esp = null;
 
