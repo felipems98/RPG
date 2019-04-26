@@ -54,7 +54,7 @@ namespace Personagem
             car = per.raca.atributos.carisma + per.classe.atributos.carisma;
             hp = per.raca.atributos.hitPoints + per.classe.atributos.hitPoints;
             per.att = consA.setAtributos(agi, dest, forca, perc, tecno, intel, deter, car, hp);
-            ///////////////////////////////////////////////////////////////////////////////////////////////
+            //////////////////////////////////////////////////////////////////////////////////////////////
             return per;
         }
 
