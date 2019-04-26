@@ -44,14 +44,19 @@
                 case 7:
                     esp = new Especialidade();
                     esp.idEsp = id;
-                    esp.nome = "Experiente";
+                    esp.nome = "Caça Tesouros";
                     break;
                 case 8:
                     esp = new Especialidade();
                     esp.idEsp = id;
-                    esp.nome = "Imortal";
+                    esp.nome = "Experiente";
                     break;
                 case 9:
+                    esp = new Especialidade();
+                    esp.idEsp = id;
+                    esp.nome = "Imortal";
+                    break;
+                case 10:
                     esp = new Especialidade();
                     esp.idEsp = id;
                     esp.nome = "Mais Conhecimento";

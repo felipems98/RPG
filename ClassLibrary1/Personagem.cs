@@ -16,14 +16,14 @@ namespace Personagem
         public Atributos att { get; set; }
         public string historia { get; set; }
 
-        public Personagem criarPersonagem(string nm, int idRaca, int idClasse, int idEsp1, int idEsp2, string hist)
+        public Personagem criarPersonagem (string nm, int idRaca, int idClasse, int idEsp1, int idEsp2, string hist)
         {
             var per = new Personagem();
             var consR = new Raca();
             var consC = new Classe();
             var consA = new Atributos();
             var consE = new Especialidade();
-            int agi;
+            /*int agi;
             int dest;
             int forca;
             int perc;
@@ -32,9 +32,7 @@ namespace Personagem
             int deter;
             int car;
             int hp;
-
-
-
+            */
             //Definoe nome, raça, classe, especialidades e historia do personagem.
             per.nome = nm;
             per.raca = consR.selecionaRaca(idRaca);
@@ -44,16 +42,15 @@ namespace Personagem
             per.historia = hist;
             ////////////////////////////////////////////////////////////////////////////////////////////
             //definir os atributos do personagem somando os atributos da classe com os atributos da raça
-            agi = per.raca.atributos.agilidade + per.classe.atributos.agilidade;
-            dest = per.raca.atributos.destreza + per.classe.atributos.destreza;
-            forca = per.raca.atributos.forca + per.classe.atributos.forca;
-            perc = per.raca.atributos.percepcao + per.classe.atributos.percepcao;
-            tecno = per.raca.atributos.tecnologia + per.classe.atributos.tecnologia;
-            intel = per.raca.atributos.inteligencia + per.classe.atributos.inteligencia;
-            deter = per.raca.atributos.determinacao + per.classe.atributos.determinacao;
-            car = per.raca.atributos.carisma + per.classe.atributos.carisma;
-            hp = per.raca.atributos.hitPoints + per.classe.atributos.hitPoints;
-            per.att = consA.setAtributos(agi, dest, forca, perc, tecno, intel, deter, car, hp);
+            per.att.agilidade = per.raca.atributos.agilidade + per.classe.atributos.agilidade;
+            per.att.destreza = per.raca.atributos.destreza + per.classe.atributos.destreza;
+            per.att.forca = per.raca.atributos.forca + per.classe.atributos.forca;
+            per.att.percepcao = per.raca.atributos.percepcao + per.classe.atributos.percepcao;
+            per.att.tecnologia = per.raca.atributos.tecnologia + per.classe.atributos.tecnologia;
+            per.att.inteligencia = per.raca.atributos.inteligencia + per.classe.atributos.inteligencia;
+            per.att.determinacao = per.raca.atributos.determinacao + per.classe.atributos.determinacao;
+            per.att.carisma = per.raca.atributos.carisma + per.classe.atributos.carisma;
+            per.att.hitPoints = per.raca.atributos.hitPoints + per.classe.atributos.hitPoints;
             //////////////////////////////////////////////////////////////////////////////////////////////
             return per;
         }
