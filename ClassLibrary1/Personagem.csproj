@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Atributos.cs" />
     <Compile Include="Classe.cs" />
+    <Compile Include="Especialidade.cs" />
     <Compile Include="Personagem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Raca.cs" />
